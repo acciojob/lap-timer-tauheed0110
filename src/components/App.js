@@ -61,8 +61,8 @@ const App = () => {
     return `${formatTime(minute)}:${formatTime(second)}:${formatTime(centiSecond)}`
   }
   return (
-    <div>
-      <div id="root">{displayTime()}</div>
+    <>
+      <div>{displayTime()}</div>
       <button onClick={handleStart}>Start</button>
       <button onClick={handleStop}>Stop</button>
       <button onClick={handleLap}>Lap</button>
@@ -75,7 +75,7 @@ const App = () => {
           })
         }
       </ul>
-    </div>
+    </>
   )
 }
 
