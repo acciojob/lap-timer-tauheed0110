@@ -62,7 +62,7 @@ const App = () => {
   }
   return (
     <div>
-      <div className="timer">{displayTime()}</div>
+      <div id="root">{displayTime()}</div>
       <button onClick={handleStart}>Start</button>
       <button onClick={handleStop}>Stop</button>
       <button onClick={handleLap}>Lap</button>
